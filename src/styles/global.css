@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Oxygen:wght@300;400;700&display=swap');
+
+@import "./componets/Nav.css";
+@import "./componets/Hero.css";
+@import "./componets/About.css";
+@import "./componets/Learn.css";
+@import "./componets/Testimony.css";
+@import "./componets/Duck.css";
+@import "./componets/Because.css";
+@import "./componets/Pricing.css";
+@import "./componets/Footer.css";
+
+
+
+:root {
+    /*font size variable*/
+    --fontBase: "Inter", sans-serif;
+    --fontAlternative:'Oxygen', sans-serif;
+    --headLine1: bold 72px/98px var(--fontBase);
+    --headLine2: bold 48px/64px var(--fontBase);
+    --headLine3: bold 40px/54px var(--fontBase);
+    --headLine4: bold 28px/40px var(--fontBase);
+    --headLine5: bold 24px/34px var(--fontBase);
+    --body1: 16px/25px var(--fontBase);
+    --body2: 14px/22px var(--fontBase);
+    --buttom: bold 14px/23px var(--fontBase);
+    --caption: 12px/19px var(--fontBase);
+    --mencion : lighter 24px/39px var(--fontAlternative);
+    --mencion2: 34px/55px var(--fontAlternative);
+    --mencion3:bold 34px/55px var(--fontAlternative);
+    --testimony : bold 16px/26px var(--fontAlternative);
+    --label: bold 18px/28px var(--fontBase);
+    --lead: 18px/32px var(--fontBase);
+    /*bg color variable*/
+    --gradient:linear-gradient(90deg, #FF8008 0%, #FFC837 100%);transform: matrix(-1, 0, 0, 1, 0, 0),linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
+    --cardbg:rgba(255, 255, 255, 0.2);
+    --cardbg2:#E0E4EB;
+    --bgAlt:#C6C6C6;
+    backdrop-filter: blur(39.7657px);
+      /*color variable*/
+    --principal :#FFC837; 
+    --shadow-principal: #DD9E00;
+    --complementario1: #3E13B0;
+    --purple: #310a90;
+    --green: #42e2bb;
+    --white: white;
+    --gray: #eeeeee;
+    --black: #000;
+    --blue1: #0FCBFC;
+    --correcto: #16C79A;
+    --eror:#F05454;
+    --shadowComplementario:#5015F0;
+    --cardbgHeader: #FFD569;
+    --bgBtn: #FFC837;
+
+  }
+  
+  body {
+    background: var(--gray);
+    min-block-size: 360px;
+    font: var(--buttom);
+    color: var(--black);
+    margin: 0;
+  }
+  
+  .wrapper{
+    max-inline-size: 1158px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    margin: auto;
+     
+}
+
+@media only screen and (min-width: 1366px){
+  .wrapper{
+    padding-inline-end: 83px;
+    padding-inline-start: 83px;
+  }
+}
+
+.day   { background: #eee; color: black; }
+.night { background: #333; color: white; }
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme   { background:  #333; color: white; }
+  .night.dark-scheme { background: black; color:  #ddd; }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}

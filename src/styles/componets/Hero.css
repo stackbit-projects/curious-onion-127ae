@@ -1,0 +1,69 @@
+@import "./items/CardHero.css";
+
+
+.hero{
+    padding-block-start: 16px;
+    background: var(--gradient);
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hero-content .hero-img{
+
+}
+.hero-content .hero-img img {
+    padding-inline-start: 0;
+    padding-inline-end:0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    max-inline-size: 100%;
+}
+
+
+.hero-content .hero-text {
+    padding-inline-end: 10px; 
+    padding-inline-start: 10px;
+}
+.hero-content .hero-text .hero-title{
+    font: var(--headLine5);
+    color: var(--white);
+}
+
+
+@media only screen and (min-width: 500px){
+ 
+    .hero-content .hero-img{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+    
+    }
+     
+}
+
+
+@media only screen and (min-width: 768px){
+ 
+    .hero-content{
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero-content .hero-text {
+        order: -1;
+    }
+    .hero-content .hero-text .hero-title{
+        font: var(--headLine4);
+    }
+     
+}
+@media only screen and (min-width: 1366px){
+    .hero-content{
+        
+        padding-inline-start: 83px;
+        padding-inline-end: 83px;
+    }
+}

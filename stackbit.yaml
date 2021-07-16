@@ -1,0 +1,227 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+dataDir: docs
+models:
+  chunk_map:
+    type: data
+    label: Chunk Map
+    file: chunk-map.json
+    fields:
+      - type: list
+        name: polyfill
+        label: Polyfill
+        items:
+          type: string
+      - type: list
+        name: app
+        label: App
+        items:
+          type: string
+      - type: list
+        name: component---src-pages-404-js
+        label: Component Src Pages 404 Js
+        items:
+          type: string
+      - type: list
+        name: component---src-pages-index-js
+        label: Component Src Pages Index Js
+        items:
+          type: string
+  app_data:
+    type: data
+    label: App Data
+    file: page-data/app-data.json
+    fields:
+      - type: string
+        name: webpackCompilationHash
+        label: Webpack Compilation Hash
+  page_data:
+    type: data
+    label: Page Data
+    folder: page-data
+    fields:
+      - type: string
+        name: componentChunkName
+        label: Component Chunk Name
+      - type: string
+        name: path
+        label: Path
+  webpack_stats:
+    type: data
+    label: Webpack Stats
+    file: webpack.stats.json
+    fields:
+      - type: object
+        name: namedChunkGroups
+        label: Named Chunk Groups
+        fields:
+          - type: object
+            name: polyfill
+            label: Polyfill
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: list
+                name: assets
+                label: Assets
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: name
+                      label: Name
+                    - type: number
+                      name: size
+                      label: Size
+                      subtype: int
+              - type: number
+                name: filteredAssets
+                label: Filtered Assets
+                subtype: int
+              - type: number
+                name: assetsSize
+                label: Assets Size
+                subtype: int
+              - type: number
+                name: filteredAuxiliaryAssets
+                label: Filtered Auxiliary Assets
+                subtype: int
+              - type: number
+                name: auxiliaryAssetsSize
+                label: Auxiliary Assets Size
+                subtype: int
+          - type: object
+            name: app
+            label: App
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: list
+                name: assets
+                label: Assets
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: name
+                      label: Name
+                    - type: number
+                      name: size
+                      label: Size
+                      subtype: int
+              - type: number
+                name: filteredAssets
+                label: Filtered Assets
+                subtype: int
+              - type: number
+                name: assetsSize
+                label: Assets Size
+                subtype: int
+              - type: number
+                name: filteredAuxiliaryAssets
+                label: Filtered Auxiliary Assets
+                subtype: int
+              - type: number
+                name: auxiliaryAssetsSize
+                label: Auxiliary Assets Size
+                subtype: int
+          - type: object
+            name: component---src-pages-404-js
+            label: Component Src Pages 404 Js
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: list
+                name: assets
+                label: Assets
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: name
+                      label: Name
+                    - type: number
+                      name: size
+                      label: Size
+                      subtype: int
+              - type: number
+                name: filteredAssets
+                label: Filtered Assets
+                subtype: int
+              - type: number
+                name: assetsSize
+                label: Assets Size
+                subtype: int
+              - type: number
+                name: filteredAuxiliaryAssets
+                label: Filtered Auxiliary Assets
+                subtype: int
+              - type: number
+                name: auxiliaryAssetsSize
+                label: Auxiliary Assets Size
+                subtype: int
+          - type: object
+            name: component---src-pages-index-js
+            label: Component Src Pages Index Js
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: list
+                name: assets
+                label: Assets
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: name
+                      label: Name
+                    - type: number
+                      name: size
+                      label: Size
+                      subtype: int
+              - type: number
+                name: filteredAssets
+                label: Filtered Assets
+                subtype: int
+              - type: number
+                name: assetsSize
+                label: Assets Size
+                subtype: int
+              - type: number
+                name: filteredAuxiliaryAssets
+                label: Filtered Auxiliary Assets
+                subtype: int
+              - type: number
+                name: auxiliaryAssetsSize
+                label: Auxiliary Assets Size
+                subtype: int
+      - type: object
+        name: assetsByChunkName
+        label: Assets By Chunk Name
+        fields:
+          - type: list
+            name: polyfill
+            label: Polyfill
+            items:
+              type: string
+          - type: list
+            name: app
+            label: App
+            items:
+              type: string
+          - type: list
+            name: component---src-pages-404-js
+            label: Component Src Pages 404 Js
+            items:
+              type: string
+          - type: list
+            name: component---src-pages-index-js
+            label: Component Src Pages Index Js
+            items:
+              type: string
